@@ -38,7 +38,8 @@ void exercise_one() {
 // Exercise two
 
 void rough_prime_numbers() {
-    int primes[100] = {2};
+    int primes[100] = {2};    //I chose a static array because, for this problem, the size cannot exceed 100, leading to O(1) memory consumption. In addition,
+    //using dynamic arrays introduces an overhead for the repeated calls to new and delete[] that I believe it is better to avoid. Finally, it is a much simpler solution
     int index{1};
     bool is_prime{true};
     for (unsigned int num=3; num <= 100; ++num) {
